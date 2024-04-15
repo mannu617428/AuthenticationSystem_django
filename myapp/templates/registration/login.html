@@ -49,7 +49,9 @@
         <h1>User Login</h1>
         <form method="post">
             {% csrf_token %}
-            <!-- Add options to select user role -->
+            <!-- Input fields for OTP authentication -->
+            <input type="text" name="phone_number" placeholder="Phone Number"><br>
+            <input type="text" name="otp" placeholder="OTP"><br>
             <select name="user_role">
                 <option value="admin">Admin</option>
                 <option value="regular_user">Regular User</option>
@@ -64,3 +66,4 @@
     </div>
 </body>
 </html>
+

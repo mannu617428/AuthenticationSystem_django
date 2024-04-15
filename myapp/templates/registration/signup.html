@@ -49,6 +49,10 @@
         <h1>User Registration</h1>
         <form method="post">
             {% csrf_token %}
+            <!-- OTP authentication section -->
+            <input type="text" name="phone_number" placeholder="Phone Number"><br>
+            <input type="text" name="otp" placeholder="OTP"><br>
+            <!-- Existing fields for username, email, and password -->
             <input type="text" name="username" placeholder="Username"><br>
             <input type="email" name="email" placeholder="Email"><br>
             <input type="password" name="password1" placeholder="Password"><br>
